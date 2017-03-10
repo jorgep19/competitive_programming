@@ -83,8 +83,8 @@ class Main {
 				// A suit is "stopped" if it contains an ace, or if it contains a 
 				// king and at least one other card, or if it contains a queen and 
 				// at least two other cards.
-				if(hasAce[i] || (hasKing[i] && suitCounts[i] >= 1) || 
-				   (hasQueen[i] && suitCounts[i] >= 2)) {
+				if(hasAce[i] || (hasKing[i] && suitCounts[i] >= 2) || 
+				   (hasQueen[i] && suitCounts[i] >= 3)) {
 					isSuitStopped[i] = true;
 				}
 
